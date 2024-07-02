@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            font-family: "Afacad", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <blockquote><center><b>Fourth</b> assignment of SMIT</center></blockquote><hr>
+    <h1>
+        <u><center><img src="img/logo.png" alt="school logo" style="width: 50px; margin-top: 12px;">Student's Registration form</center></u>
+    </h1>
+
+    <form>
+        <h3>
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" placeholder="First Name" maxlength="30"
+                style="margin-left:33px;"> (max 30 characters a-z and A-Z)
+        </h3>
+
+        <h3>
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Last Name" maxlength="30"
+                style="margin-left:33px;"> (max 30 characters a-z and A-Z)
+        </h3>
+
+        <h3>Date of Birth:</h3>
+        <label for="year">Year:</label>
+        <select name="year" id="year" style="margin-left:10px;">
+            <option hidden value="YEAR">Year</option>
+            <!-- Add other years as needed -->
+            <option value="1995">1995</option>
+            <option value="1996">1996</option>
+            <!-- ... -->
+            <option value="2024">2024</option>
+        </select>
+
+        <label for="day" style="margin-left:10px;">Day:</label>
+        <select name="day" id="day" style="margin-left:10px;">
+            <option hidden>Date</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <!-- ... -->
+            <option value="31">31</option>
+        </select>
+
+        <label for="month" style="margin-left:10px;">Month:</label>
+        <select name="month" id="month" style="margin-left:10px;">
+            <option hidden>Month</option>
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <!-- ... -->
+            <option value="12">December</option>
+        </select>
+
+        <h3>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" style="margin-left:71px;">
+        </h3>
+
+        <h4>
+            <label for="phone">Mobile Number:</label>
+            <input type="text" id="phone" name="phone" maxlength="10" placeholder="03******" style="margin-left: 16px;">
+            (10-digit number)
+        </h4>
+
+        <h3>Gender:</h3>
+        <label>
+            <input type="radio" name="gender" value="male"> Male
+        </label>
+        <label>
+            <input type="radio" name="gender" value="female"> Female
+        </label>
+
+        <h3>
+            <label for="address">Address:</label>
+            <textarea name="address" id="address" rows="4" style="margin-left:52px;"></textarea>
+        </h3>
+
+        <h3>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" maxlength="30" placeholder="City" style="margin-left:81px;">
+        </h3>
+
+        <h3>
+            <label for="pincode">PIN Code:</label>
+            <input type="text" id="pincode" name="pincode" maxlength="6" placeholder="PIN Code"
+                style="margin-left:42px;"> (6-digit number)
+        </h3>
+
+        <h3>
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" maxlength="30" placeholder="State" style="margin-left:74px;">
+            (max 30 characters a-z and A-Z)
+        </h3>
+
+        <h3>
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" maxlength="30" placeholder="Country"
+                style="margin-left:53px;">
+        </h3>
+
+        <h3>Hobbies:</h3>
+        <label>
+            <input type="checkbox" name="hobbies" value="drawing"> Drawing
+        </label>
+        <label>
+            <input type="checkbox" name="hobbies" value="singing"> Singing
+        </label>
+        <label>
+            <input type="checkbox" name="hobbies" value="sketching"> Sketching
+        </label>
+        <label>
+            <input type="checkbox" name="hobbies" value="dancing"> Dancing
+        </label>
+        <label>
+            <input type="checkbox" name="hobbies" value="other"> Other
+            <input type="text" name="other_hobby" placeholder="Specify other hobby">
+        </label>
+
+        <h3>Qualification:</h3>
+        <table border="1" style="float:left; margin-left:80px;">
+            <thead>
+                <tr>
+                    <th>SI.NO</th>
+                    <th>Examination</th>
+                    <th>Board</th>
+                    <th>Percentage</th>
+                    <th>Year of Passing</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Class X</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Class XII</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Graduation</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Masters</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br><br><br><br><br><br><br><br>
+
+        <h3>Courses Applied For:</h3>
+        <label>
+            <input type="radio" name="course" value="bca"> B.CA
+        </label>
+        <label>
+            <input type="radio" name="course" value="bcom"> B.Com
+        </label>
+        <label>
+            <input type="radio" name="course" value="bsc"> B.Sc
+        </label>
+        <label>
+            <input type="radio" name="course" value="ba"> B.A
+        </label>
+
+        <center>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </center>
+    </form>
+</body>
+
+</html>
